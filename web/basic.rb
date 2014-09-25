@@ -1,10 +1,11 @@
+#Thitaporn Thapanasakul 5631235221
+#Chanikarn Thavornwong  5631228921
 require 'sinatra'
 require 'timezone'
 
 get '/'  do
 	erb :form
 end
-
 post '/city' do
 	city = params[:input]
 	worldtime = Timezone::Zone.names
